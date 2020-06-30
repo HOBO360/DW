@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/js/bootstrap.min.js" ></script>
+		<style type="text/css">
+			.navbar-brand img {
+				width: 100px;
+				height: 40px;
+			}
+			#mynav{
+				margin-left: 30px;
+				
+			}
+			.collapse li a{
+				color: white;
+				line-height: 30px;
+			}
+
+			.navbar{
+				background-color: rgba(0, 14, 34, 0.9);
+				height: 60px;
+			}
+			.bg{
+				width: 100%;
+				height: 600px;
+			}
+			.bg2,.bg3,.bg4,.bg5 ,.bg6{
+				width: 100%;
+				height: 450px;
+				margin: 20px 0;
+			}
+			.bg img ,.bg2 img,.bg3 img ,.bg4 img ,.bg5 img ,.bg6 img{
+				width:100%;
+				height: 100%;
+			}
+
+			.navbar{
+				border-radius: 0px;
+				position: relative;
+			    min-height: 50px;
+			    margin-bottom: 0px;
+			    border: 1px solid transparent;
+			}
+			.carousel-caption {
+				position: absolute;
+				right: 15%;
+				bottom: 300px;
+				left: -600px;
+				z-index: 10;
+				padding-top: 20px;
+				padding-bottom: 0px;
+				color: #fff;
+				text-align: center;
+				text-shadow: 0 0px 0px rgba(0, 0, 0, .6);
+				color: black;
+			}
+			.carousel-caption>span{
+				font-size: 50px;
+				margin-bottom: 10px;
+			}
+			.carousel-caption div{
+				margin-top: 10px;
+				width:180px;
+				height: 35px;
+				border: 1px solid black;
+				
+			}
+			.carousel-caption div>a{
+				color: black;
+				
+			}
+			.wis{
+				width: 100%;
+				height: 50px;
+				background-color: rgb(244, 244, 244);
+				margin-bottom: 30px;
+			}
+			.wis a{
+				line-height: 50px;
+				color: rgb(0, 8, 28);   			
+			}
+			.col_1{
+				width:20px;
+				height: 20px;
+				background-color: rgb(205,155,145);
+				border-radius: 50%;
+				border:1px solid black;
+				float: left;
+				margin-right: 20px;
+			}
+			.col_2{
+				width:20px;
+				height: 20px;
+				background-color: lightgray;
+				border-radius: 50%;
+				float: left;
+			}
+			.col_3{
+				width:20px;
+				height: 20px;
+				background-color: rgb(191,173,111);
+				border-radius: 50%;
+				border:1px solid black;
+				float: left;
+			}
+			.panel-body{
+				background-color: rgb(244, 244, 244);
+				height: 262.5px;
+			}
+
+			.panel-footer{
+				background-color: white;
+			}
+			.watch .panel img{
+				width: 100%;
+				height: 100%;
+			}
+			.watch .panel:hover{
+				box-shadow:2px 2px 10px #909090;
+			}
+			.choose img{
+				width:100% ;
+				height: 100%;
+			}
+			.new .panel-body{
+				
+				height: 230px;
+			}
+			.new .panel-body img{
+				width: 100%;
+				height: 100%;
+			}
+			.thumbnail{
+				display: block; 
+				border: 0;
+				border-radius: 5px;
+				padding: 0;
+     			padding-bottom:10px;
+     			box-shadow:2px 2px 10px #909090;
+			}
+			.mybtn , .mybun{
+				background-color: white;
+				color: #080808;
+				padding: 15px 20px;
+				border:1px solid black;
+				margin-bottom: 10px;
+				
+			}
+			.mybun{
+				padding: 5px 60px;
+				background-color:transparent;
+			}
+			hr{
+				width: 90%;
+				
+			}
+			.mybtn:hover{
+				
+				background-color: #0F0F0F;
+				color: white;	 
+			}
+			.mybun:hover{
+				background-color: rgba(0, 14, 34, 0.9);
+				color: white;	 
+			}
+			.cont{
+				margin-left: 15px;
+			}
+			.word{
+				margin-top:50px;
+				margin-bottom:50px ;
+			}
+			#footer{
+				width: 100%;
+				height: 130px;
+				padding-top: 20px;
+				line-height: 50px;
+				color: #FFFFFF;
+				background-color: rgba(0, 14, 34, 0.9);
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-collapse navbar-default" id="navTop">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				<a class="navbar-brand" href="#">
+					<img src="img/LOGO.JPG"/>
+				</a>
+			</div>
+
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" id="mynav">
+					<li class="active">
+						<a href="#myCarousel">特别推荐</a>
+					</li>
+					<li>
+						<a href="#pro1">腕表</a>
+					</li>
+					<li>
+						<a href="#pro2">配饰</a>
+					</li>
+					<li>
+						<a href="#pro3">表带</a>
+					</li>
+					<li>
+						<a href="#pro3">礼品套装</a>
+					</li>
+					<li>
+						<a href="#pro3">探索DW</a>
+					</li>
+					<li>
+						<a href="#pro3">查找门店</a>
+					</li>
+				</ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-user"></span></a>
+					<li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a>
+					</li>
+						
+				</ul>
+			</div>
+
+		</nav>
+		
+		<div class="bg">
+			<img src="img/4_ldpg-kv-PC.jpg.jpg"/>
+			<div class="carousel-caption">
+				<h3>P E T I T E  C A N T E R B U R Y</h3>
+				<span>玩乐时间 • 玩出色</span>
+				<p>全新PETITE织纹腕表，诠释色彩分割美学</p>
+				<button class="mybun">玩乐开启</button>
+			</div>
+		</div>
+		
+		
+		
+		<div class="wis">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-sm-4"><a href="#"><img src="img/图片2.png" />定制贺卡</a></div>
+					<div class="col-sm-4"><a href="#"><img src="img/图片1.png" />花呗分期</a></div>
+					<div class="col-sm-4"><a href="#"><img src="img/图片2.png" />两年保修</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_petite_melrose_28rg_6.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   M E L R O S E</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span><br />
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_sheffield_b36rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   S H E F F I E L D</p>
+								<div class="col_1"></div> 
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,380</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00100319_petite_rosewater_w28rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   R O S E W A T E</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,090</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw-petite-28-ashfield-rg-cat_1.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;A S H F I E L D</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="bg2">
+			<img src="img/bg2.png" />
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00100349_petite_28_evergold_black.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   E V E R G O L D</p>
+								<div class="col_3"></div><br />
+								<span>金色</span><br />
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_petite_melrose_b28rg_7.png" />
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   M E L R O S E</p>
+								<div class="col_1"></div> 
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw-petite-28-ashfield-rg-cat_1.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   A S H F L E L D</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_petite_sterling_b28s.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;S T E R L I N G</p>
+
+								<div class="col_2"></div><br />
+								<span>银色</span>
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bg3">
+			<img src="img/bg3.png" />
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00100213_link_28_rg_white.png" />
+							</div>
+							<div class="panel-footer">
+								<p>I C N I C &nbsp;&nbsp;&nbsp;&nbsp;   L I N K</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span><br />
+								<p>￥ 1,690</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_sheffield_b36rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>I C N I C &nbsp;&nbsp;&nbsp;&nbsp;   L I N K</p>
+								<div class="col_1"></div> 
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,690</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00100319_petite_rosewater_w28rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>I C N I C &nbsp;&nbsp;&nbsp;&nbsp;   L I N K</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,690</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw-petite-28-ashfield-rg-cat_1.png" />
+							</div>
+							<div class="panel-footer">
+								<p>I C N I C &nbsp;&nbsp;&nbsp;&nbsp;   L I N K</p>
+
+								<div class="col_2"></div><br />
+								<span>银色</span>
+								<p>￥ 1,690</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="bg4">
+			<img src="img/bg4.png" />
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_petite_cambridge_28rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   C A M B R I D G E</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span><br />
+								<p>￥ 1,090</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_cornwall_b36rg_4.png" />
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   C O R N W A L L</p>
+								<div class="col_1"></div> 
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,350</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw_classic_canterbury_36rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   C A N T E R B U R Y</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,250</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/classic_bayswater_w36rg.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;B A Y S W A T E R</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,350</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="bg5">
+			<img src="img/bg5.png" />
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/petite_ashfield_rg_b36_petite_melrose_rg_w28_1_1_.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   A S H F I E L D + M E L R O S E</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span><br />
+								<p>￥ 2,780</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/petite_black_ashfield_rg_28mm_bracelet_rg_s.png"/>
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   A S H F I E L D + B R A C E L E T</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,880</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/classic_petite_melrose_b36rg_classic_bracelet_rg_l.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;   M E L R O S E + B R A C E L E T</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 2,080</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00100219_dw00400003.png"/>
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;M E L R O S E + B R A C E L E T</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,880</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="bg6">
+			<img src="img/bg6.png" />
+		</div>
+		<div class="container">
+			<div class="watch">
+				<div class="row ">
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00400078_classic_ring_52_yg_1__1.png" />
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   R I N G</p>
+								<div class="col_3"></div><br />
+								<span>金色</span><br />
+								<p>￥ 390</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00400003_classic_cuff_small_yg_1_1_1_.png" />
+							</div>
+							<div class="panel-footer">
+								<p>C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;  B R A C E L E T</p>
+								<div class="col_1"></div> 
+								<div class="col_2"></div><br />
+								<span>金色</span>
+								<p>￥ 590</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00400017_classic_ring_52_rg_7.png"/>
+							</div>
+							<div class="panel-footer">
+								<p> C L A S S I C &nbsp;&nbsp;&nbsp;&nbsp;   R I N G</p>
+								<div class="col_1"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 490</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="panel">
+							<div class="panel-body">
+								<img src="img/dw00400042_classic_ring_54_rg_satin_white.png" />
+							</div>
+							<div class="panel-footer">
+								<p>P E T I T E &nbsp;&nbsp;&nbsp;&nbsp;A S H F I E L D</p>
+								<div class="col_1"></div>
+								<div class="col_2"></div><br />
+								<span>玫瑰金</span>
+								<p>￥ 1,290</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="choose">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="img/精选女士.png" />
+					</div>
+					<div class="col-sm-6">
+						<img src="img/精选男士.png" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="new">
+				<div class="word text-center">
+					<h2>DANIEL WELLINGTON的最新情报</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<img src="img/1200750new.jpg" />
+							<div class="cont">
+								<h3>H A P P Y F A T H E R S D A Y</h3>
+								<hr/>
+								<p>父亲节最潮的事就是 给爸爸送上一支DANIEL WELLINGTON手表…</p>
+							</div>
+							<button class="mybtn center-block">阅读全文</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<img src="img/1200750xin.jpg" />
+							<div class="cont">
+								<h3>百变造型女孩养成记</h3>
+								<hr/>
+								<p>6月11日19：30 DANIEL WELLINGTON直播间今晚开播…</p>
+							</div>
+							
+							<button class="mybtn center-block">阅读全文</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="thumbnail">
+							<img src="img/12007502.jpg" />
+							<div class="cont">
+								<h3>金色女王#玩耀眼</h3>
+								<hr/>
+								<p>小孩子才做选择，时髦人全都要！…</p>
+								<br />
+							</div>
+							<button class="mybtn center-block">阅读全文</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="img/logo.png" />
+						粤公网安备 44030502000796号 &nbsp;&nbsp;|&nbsp;&nbsp;粤ICP备15098750号&nbsp;&nbsp;|&nbsp;&nbsp;营业执照
+					</div>
+					<div class="col-sm-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						ALL  RIGHTS RESERVED.COPYPIGHT丹尼尔惠灵顿贸易（深圳）有限公司
+					</div>
+					<div class="col-sm-6">
+						使用条款&nbsp;&nbsp;|&nbsp;&nbsp;防伪声明&nbsp;&nbsp;|&nbsp;&nbsp;隐私政策&nbsp;&nbsp;|&nbsp;&nbsp;网站地图
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
